@@ -17,3 +17,7 @@ map("i", "jk", "<ESC>")
 -- Retain indent when moving blocks of code 
 map("v", "<", "<gv")
 map("v", ">", ">gv")
+
+-- Nvim-Tree
+map("n", "<Space><Space>", ":NvimTreeToggle<CR>")
+map("n", "<C-e>", ":NvimTreeFocus<CR>")

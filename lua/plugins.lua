@@ -18,6 +18,10 @@ require("lazy").setup({
     -- Treesitter
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 
+    -- Nvim-Tree
+    "nvim-tree/nvim-tree.lua",
+    "nvim-tree/nvim-web-devicons",
+
 })
 
 vim.cmd("colorscheme gruvbox")

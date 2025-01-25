@@ -13,7 +13,12 @@ local options = {
     number = true, -- show line numbers
     relativenumber = true, -- all line numbers relative to current line
     termguicolors = true, -- enable 24-bit RGB color
-    showmode = false -- don't show mode tip
+    showmode = false, -- don't show mode tip
+    linebreak = true
 }
 
 for k,v in pairs(options) do vim.opt[k] = v end   
+
+-- Disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
