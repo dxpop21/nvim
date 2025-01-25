@@ -22,6 +22,9 @@ require("lazy").setup({
     "nvim-tree/nvim-tree.lua",
     "nvim-tree/nvim-web-devicons",
 
+    -- Toggleterm
+    {'akinsho/toggleterm.nvim', version = "*", config = true},
+
 })
 
 vim.cmd("colorscheme gruvbox")
