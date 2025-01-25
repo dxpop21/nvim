@@ -14,9 +14,9 @@ map("i", "<C-s>", "<ESC>:w<CR>")
 -- Press jk to enter normal mode 
 map("i", "jk", "<ESC>")
 
--- Retain indent when moving blocks of code 
-map("v", "<", "<gv")
-map("v", ">", ">gv")
+-- Indenting in visual mode
+map("v", "<S-Tab>", "<gv")
+map("v", "<Tab>", ">gv")
 
 -- Nvim-Tree
 map("n", "<Space><Space>", ":NvimTreeToggle<CR>")
