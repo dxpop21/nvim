@@ -21,3 +21,11 @@ map("v", ">", ">gv")
 -- Nvim-Tree
 map("n", "<Space><Space>", ":NvimTreeToggle<CR>")
 map("n", "<C-e>", ":NvimTreeFocus<CR>")
+
+-- Disable keys
+map("n", "<PageDown>", "<Nop>")
+map("i", "<PageDown>", "<Nop>")
+map("v", "<PageDown>", "<Nop>")
+map("n", "<PageUp>", "<Nop>")
+map("i", "<PageUp>", "<Nop>")
+map("v", "<PageUp>", "<Nop>")
