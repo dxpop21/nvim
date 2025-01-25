@@ -15,7 +15,7 @@ require("lazy").setup({
     -- Colorscheme
     "ellisonleao/gruvbox.nvim",
 
-    -- Treesitter
+    -- Treesitter: 
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 
     -- Nvim-Tree
@@ -25,6 +25,12 @@ require("lazy").setup({
     -- Toggleterm
     {'akinsho/toggleterm.nvim', version = "*", config = true},
 
+    -- Nvim-Autopairs
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+    },
 })
 
 vim.cmd("colorscheme gruvbox")
