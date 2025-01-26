@@ -31,6 +31,23 @@ require("lazy").setup({
         event = "InsertEnter",
         config = true
     },
+
+    -- Telescope
+    {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.8',
+        dependencies = { 'nvim-lua/plenary.nvim' }
+    },
+
+    -- Comment
+    'numToStr/Comment.nvim',
+
+
+
+    -- LSP Plugins
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
 })
 
 vim.cmd("colorscheme gruvbox")
