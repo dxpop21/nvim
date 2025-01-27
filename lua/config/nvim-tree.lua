@@ -11,4 +11,16 @@ require("nvim-tree").setup({
   filters = {
     dotfiles = false,
   },
+  diagnostics = {
+      enable = true,
+      icons = {
+          hint = "",
+          info = "",
+          warning = "",
+          error = "",
+      }
+  },
+  git = {
+      enable = true,
+  }
 })
