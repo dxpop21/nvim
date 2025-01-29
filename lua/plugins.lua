@@ -39,6 +39,8 @@ require("lazy").setup({
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
 
+    'nvim-telescope/telescope-ui-select.nvim',
+
     -- Comment
     'numToStr/Comment.nvim',
 
@@ -48,6 +50,16 @@ require("lazy").setup({
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
+
+    "nvimtools/none-ls.nvim",
+    "nvimtools/none-ls-extras.nvim",
+
+    "hrsh7th/nvim-cmp",
+    "L3MON4D3/LuaSnip",
+    "saadparwaiz1/cmp_luasnip",
+    "rafamadriz/friendly-snippets",
+    "hrsh7th/cmp-nvim-lsp"
 })
 
 vim.cmd("colorscheme gruvbox")
+

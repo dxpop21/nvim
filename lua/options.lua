@@ -17,7 +17,7 @@ local options = {
     linebreak = true
 }
 
-for k,v in pairs(options) do vim.opt[k] = v end   
+for k,v in pairs(options) do vim.opt[k] = v end
 
 -- Disable netrw
 vim.g.loaded_netrw = 1
