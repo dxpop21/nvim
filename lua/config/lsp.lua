@@ -4,6 +4,9 @@ require("mason-lspconfig").setup({
     ensure_installed = {
         "lua_ls",
         "ts_ls",
+        "html",
+        "emmet_ls",
+        "cssls",
     },
 })
 
@@ -21,8 +24,14 @@ lspconfig.ts_ls.setup({
 lspconfig.html.setup({
     capabilities = capabilities,
 })
+lspconfig.emmet_ls.setup({
+    capabilities = capabilities,
+})
+lspconfig.cssls.setup({
+    capabilities = capabilities,
+})
 
 -- Set keymaps
-vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-vim.keymap.set({ "n", "v" }, "ca", vim.lsp.buf.code_action, {})
+vim.keymap.set("n", "K", vim.lsp.buf.hover)
+vim.keymap.set("n", "gd", vim.lsp.buf.definition)
+vim.keymap.set({ "n", "v" }, "ca", vim.lsp.buf.code_action)
