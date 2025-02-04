@@ -7,6 +7,7 @@ require("mason-lspconfig").setup({
         "html",
         "emmet_ls",
         "cssls",
+        "bashls",
     },
 })
 
@@ -28,6 +29,9 @@ lspconfig.emmet_ls.setup({
     capabilities = capabilities,
 })
 lspconfig.cssls.setup({
+    capabilities = capabilities,
+})
+lspconfig.bashls.setup({
     capabilities = capabilities,
 })
 
